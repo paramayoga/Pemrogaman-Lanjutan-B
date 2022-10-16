@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>TUGAS 2 JSF ATM</title>
+    </h:head>
+    <h:body>
+        <h1 class="title">Tarik Tunai</h1>
+        
+        <h:form class="kolom-jumlah">
+            <div>
+                <h3 class="label-jumlah">Masukan Jumlah Uang</h3>            
+                <h:inputText
+                    id="tarikTunai" 
+                    class="tariktunai"
+                    value="#{atmController.jumlah}"
+                />
+                <h:commandButton 
+                    id="submit-button"
+                    class="submitbtn"
+                    value="Submit"
+                    action="restariktunai"
+                /> 
+            </div>
+
+        </h:form>    
+
+        
+        <h:form class="wrap-back">
+            <h:commandLink  class="back" value = "Back" action = "index" />   
+        </h:form>
+    </h:body>
+</html>
